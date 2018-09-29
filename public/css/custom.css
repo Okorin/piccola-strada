@@ -1,0 +1,21 @@
+body {
+  padding-top: 3.2rem;
+}
+
+
+
+.header-img {
+    background-image: url("/css/img/pizza.jpeg");
+    background-position: 50% 60%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-5 {
+    width: 5%;
+}
+.w-15 {
+    width: 15%;
+}
