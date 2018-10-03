@@ -70,7 +70,7 @@ an der Elisabethstraße 1 &middot; 49808 Lingen (Ems)
                             Piccola Strada<br />
                             Elisabethstraße 1<br />
                             49808 Lingen (Ems)<br />
-                            <span itemprop="telephone"><a href="tel:+49059159156">0591 / 59156</a></span>
+                            <span itemprop="telephone"><a href="tel:+4959159156">0591 / 59156</a></span>
                         </address>
                     </td>
                 </tr>
