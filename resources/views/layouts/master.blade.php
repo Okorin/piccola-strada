@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ App::getLocale() }}">
   <head>
+    <meta name="format-detection" content="telephone=no">
     @include('layouts.css')
 	
 	@yield('custom-css')

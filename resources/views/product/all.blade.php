@@ -40,7 +40,9 @@ an der Elisabethstraße 1 &middot; 49808 Lingen (Ems)
             @foreach($products[$category->id] as $product)
                 <tr>
                     <td><span class="font-weight-bold">{{ $product->id }}.</span></td>
-                    <td><span class="font-weight-bold" id="product-{{ $product->id }}-ref">{{ $product->name }}</span>
+                    <td><span class="font-weight-bold" id="product-{{ $product->id }}-ref">@auth
+                        <a href="/products/{{ $product->id }}/edit">
+                        @endauth {{ $product->name }}@auth</a>@endauth</span>
                     @if (sizeof($product->ingredients) !== 0)
                     <br />
                     <small>{{ $product->category->ingred_word }}

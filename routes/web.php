@@ -24,10 +24,12 @@ Route::get('/impressum', function () {
 })->name('impressum');
 
 Route::get('/contact', function () {
-
+    return view('contact');
 })->name('contact');
 
 Route::resources(['ingredients' => 'IngredientsController',
                   'products' => 'ProductsController',
                   'categories' => 'CategoriesController']);
 
+
+Auth::routes();

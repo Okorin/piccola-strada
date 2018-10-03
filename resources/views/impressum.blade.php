@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Zutatenliste')
+@section('title', 'Impressum')
 @section('page-title', 'Piccola Strada Lingen')
 @section('page-description')
 Pizzeria &amp; Kebaphaus

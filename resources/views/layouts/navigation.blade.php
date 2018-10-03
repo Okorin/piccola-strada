@@ -18,6 +18,20 @@
           <li class="nav-item {{ (Route::currentRouteName() === 'impressum' ? 'active' : '') }}">
             <a class="nav-link" href="{{ route('impressum') }}">Impressum</a>
           </li>
+          @auth
+          <li class="nav-item {{ (Route::currentRouteName() === 'categories.index' ? 'active' : '') }}">
+            <a class="nav-link" href="{{ route('categories.index') }}">Kategorien</a>
+          </li>
+          <li class="nav-item {{ (Route::currentRouteName() === 'ingredients.index' ? 'active' : '') }}">
+            <a class="nav-link" href="{{ route('ingredients.index') }}">Zutaten</a>
+          </li>
+          @endauth
         </ul>
+        @auth
+        <form class="form-inline my-2 my-lg-0" method="POST" action="/logout">
+          {{ csrf_field() }}
+          <button class="btn btn-outline-success my-2 my-sm-0 btn-dark" type="submit">Logout</button>
+        </form>
+        @endauth
       </div>
     </nav>
