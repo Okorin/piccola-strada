@@ -37,6 +37,7 @@ class IngredientsController extends Controller
     {
         $ingredient = new Ingredient;
         $ingredient->name = $request->input('name');
+        $ingredient->priority = $request->input('priority');
         $ingredient->save();
         return redirect('/ingredients'); 
     }
@@ -73,8 +74,9 @@ class IngredientsController extends Controller
     public function update(Request $request, Ingredient $ingredient)
     {
         $ingredient->name = $request->input('name');
+        $ingredient->priority = $request->input('priority');
         $ingredient->save();
-        return redirect('/ingredients' );
+        return redirect('/ingredients');
     }
 
     /**

@@ -15,6 +15,8 @@ an der Elisabethstraße 1 &middot; 49808 Lingen (Ems)
   <div class="form-group">
     <label for="name">Name</label>
     <input type="text" class="form-control" name="name" id="name">
+    <label for="priority">Priority</label>
+    <input type="text" class="form-control" name="priority" id="priority">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

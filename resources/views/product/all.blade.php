@@ -65,7 +65,7 @@ an der Elisabethstraße 1 &middot; 49808 Lingen (Ems)
     @if ($key !== 0)
         <div class="col-md-4">&nbsp;</div>
     @else
-        <div class="col-sm-3 list-group">
+        <div class="col-sm-3 list-group d-none d-md-block">
     @foreach ( $categories as $category) 
             <a href="#{{ $category->id }}-heading" class="list-group-item list-group-item-action flex-column align-items-star">
                 <div class="d-flex w-100 justify-content-between align-items-center">

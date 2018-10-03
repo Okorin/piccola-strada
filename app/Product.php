@@ -19,7 +19,7 @@ class Product extends Model
 
     public function ingredients()
     {
-        return $this->belongsToMany('App\Ingredient');
+        return $this->belongsToMany('App\Ingredient')->orderBy('priority', 'desc');
     }
     public function category()
     {

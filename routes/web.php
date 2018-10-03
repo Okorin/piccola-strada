@@ -28,5 +28,6 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::resources(['ingredients' => 'IngredientsController',
-                  'products' => 'ProductsController']);
+                  'products' => 'ProductsController',
+                  'categories' => 'CategoriesController']);
 

@@ -19,7 +19,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
+        $categories = Category::orderBy('priority')->get();
         foreach($categories as $category) 
         {
             $products[$category->id] = Product::where('category_id', $category->id)->get();
