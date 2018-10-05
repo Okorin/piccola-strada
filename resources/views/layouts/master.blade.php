@@ -5,7 +5,7 @@
 	
 	@yield('custom-css')
 
-    <title>@yield('title', 'home') &middot; Piccola Strada</title>
+    <title>@yield('title', 'home') &middot; Piccola Strada Lingen</title>
   </head>
 <body>
 
